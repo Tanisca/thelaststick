@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="saved_difficulty">saved_difficulty</string>
+    <string name="option_display_stick_counter">option_display_stick_counter</string>
+    <string name="preference_file_key">com.tanisca.thelaststick.datakey</string>
+    <string name="stats_classic_easy_games">stats.game.easy.count</string>
+    <string name="stats_classic_normal_games">stats.game.medium.count</string>
+    <string name="stats_classic_hard_games">stats.game.hard.count</string>
+    <string name="stats_classic_easy_wins">stats.wins.easy.count</string>
+    <string name="stats_classic_normal_wins">stats.wins.medium.count</string>
+    <string name="stats_classic_hard_wins">stats.wins.hard.count</string>
+    <string name="stats_original_easy_games">stats.original.game.easy.count</string>
+    <string name="stats_original_normal_games">stats.original.game.medium.count</string>
+    <string name="stats_original_hard_games">stats.original.game.hard.count</string>
+    <string name="stats_original_easy_wins">stats.original.wins.easy.count</string>
+    <string name="stats_original_normal_wins">stats.original.wins.medium.count</string>
+    <string name="stats_original_hard_wins">stats.original.wins.hard.count</string>
+    <string name="stats_best_game_day_strike_score">stats.game.best.strike.count</string>
+    <string name="stats_best_game_day_strike_date">stats.game.best.first.date</string>
+    <string name="stats_current_game_day_strike">stats.game.current.strike.count</string>
+    <string name="stats_current_game_day_lastdate">stats.game.current.last.date</string>
+
+</resources>

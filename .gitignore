@@ -1,5 +1,5 @@
 # custom
-/res/values/ids.xml
+/res/values/credentials.xml
 
 # built application files
 *.apk
@@ -33,3 +33,4 @@ proguard/
 .settings/org.eclipse.jdt.core.prefs
 lint.xml
 proguard-project.txt
+

@@ -9,7 +9,7 @@
     <string name="options">Options</string>
     <string name="stats">Stats</string>
     <string name="achievements">Achievements</string>
-    <string name="achievements_unlock">Unlocked Achievements!</string>
+    <string name="achievements_unlock">Unlocked achievement!</string>
     <string name="quit_app">Quit</string>
     <string name="name_player1">Blue</string>    
     <string name="name_player2">Red</string>
