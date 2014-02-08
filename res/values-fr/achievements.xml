@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="achievement_W1EC">Un départ classique|Gagner votre première partie (classique)</string>
+    <string name="achievement_W1NC">C\'est parti !|Gagner une partie en normal (classique)</string>
+    <string name="achievement_W1HC">Toute première fois !|Gagner une partie en difficile (classique)</string>
+    <string name="achievement_W1EO">Un départ original|Gagner votre première partie! (original)</string>
+    <string name="achievement_W1NO">Bon début !|Gagner une partie en normal (original)</string>
+    <string name="achievement_W1HO">Victoire originale !|Gagner une partie en difficile (original)</string>
+    <string name="achievement_W10EC">Ouais !|Gagner 10 parties (classique)</string>
+    <string name="achievement_W10NC">Bon karma !|Gagner 10 parties en normal (classique)</string>
+    <string name="achievement_W10HC">Allez !!!|Gagner 10 parties en difficile (classique)</string>
+    <string name="achievement_W10EO">Woo !|Gagner 10 parties (original)</string>
+    <string name="achievement_W10NO">Mate moi ça !|Gagner 10 parties en normal (original)</string>
+    <string name="achievement_W10HO">Niquel !|Gagner 10 parties en difficile (original)</string>
+	<string name="achievement_W25EC">Ouais ! ouais !|Gagner 25 parties (classique)</string>
+    <string name="achievement_W25NC">Pas mal !|Gagner 25 parties en normal (classique)</string>
+    <string name="achievement_W25HC">Maitre !|Gagner 25 parties en difficile (classique)</string>
+    <string name="achievement_W25EO">Woo woo woo !|Gagner 25 parties (original)</string>
+    <string name="achievement_W25NO">Comme un chef !|Gagner 25 parties en normal (original)</string>
+    <string name="achievement_W25HO">Seigneur des Batons !|Gagner 25 parties en difficile (original)</string>
+    <string name="achievement_P25">Poussin|Faites 25 parties</string>
+    <string name="achievement_P50">Junior|Faites 50 parties</string>
+    <string name="achievement_P100">Senior|Faites 100 parties</string>
+    <string name="achievement_R5HC">Maitre du classique|Gagner 5 parties en difficile d\'affilée (classique)</string>
+    <string name="achievement_R3HO">Maitre de l\'original|Gagner 3 parties en difficile d\'affilée (original)</string>
+    <string name="achievement_D3">Re!|Jouer sur 3 jours différents</string>
+	<string name="achievement_D7">Accro!|Jouer sur 7 jours différents</string>
+	<string name="achievement__LOSS">Auto-Destruction!|Retirer plus d\'un baton sur le tout dernier coup</string>
+    
+    <!--
+    <string name="chievo_play_fifty_game">Aaaaand Fifty!|Win a first game!</string>
+    <string name="chievo_win_one_easy_game">That\'s a start!|Win a first game!</string>
+    <string name="chievo_win_one_normal_game">Good debuts!|Win a game on hard</string>
+    <string name="chievo_win_one_hard_game">The first one!|Win a game on hard</string>
+    <string name="chievo_win_ten_hard_games">Yeah!|You Win 10 games on hard</string>
+    <string name="chievo_win_five_hard_games_strike">I guess it isn\'t about luck anymore!|Win 5 games in a row on hard!</string>
+    <string name="chievo_win_five_normal_games_strike">5 in a row!|Win 5 games in a row on normal!</string>
+    <string name="chievo_win_five_easy_games_strike">Good Kharma|Win 5 games in a row on easy!</string>
+    <string name="chievo_win_five_days_strike">Five days of victory|Win at least one game a day during 5 days!</string>
+    <string name="chievo_win_timed_game">Fast enough|Win a game within 5 seconds!</string>
+    <string name="chievo_win_timed_hard_game">Fast forward|Win a game within 5 seconds on hard!</string>
+    <string name="chievo_kamikaze_game">Self-destruction|Remove more than one stick on the last move</string>
+    -->
+
+</resources>

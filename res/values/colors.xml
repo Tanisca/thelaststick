@@ -1,0 +1,18 @@
+<resources>
+    <color name="topPressButton">#63492E</color>
+    <color name="bottomPressButton">#A17B4A</color>
+    <color name="topIdleButton">#E5C68D</color>
+    <color name="bottomIdleButton">#EAE1C4</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mode_description">#CCCCCC</color>
+    <color name="topBadButton">#8C2E24</color>
+    <color name="bottomBadButton">#D45745</color>
+    <color name="topGoodButton">#507236</color>
+    <color name="bottomGoodButton">#669C3C</color>
+    <color name="topPlayer1Button">#425E6A</color>
+    <color name="bottomPlayer1Button">#7DB4BB</color>
+    <color name="topPlayer2Button">#8C2E24</color>
+    <color name="bottomPlayer2Button">#D45745</color>
+    <color name="disabledButtonText">#BBBBBB</color>
+</resources>

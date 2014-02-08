@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/mainmenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        style="@style/BoardStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/resetStatButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="4"
+            android:background="@drawable/custom_button"
+            android:text="@string/reset_stats"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:text="@string/menu"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/swipePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_alignParentTop="true"
+        android:eventsInterceptionEnabled="true"
+        android:fadeEnabled="false"
+        android:gestureColor="@color/white"
+        android:gestureStrokeLengthThreshold="1" >
+
+        <LinearLayout
+            style="@style/BoardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/top_header"
+                layout="@layout/inc_header" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp">
+
+                        <TableLayout
+                            android:id="@+id/statsTableClassic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/stats_table" >
+
+                            <TableRow
+                                android:id="@+id/statsHeaderRowClassic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center_vertical|left"
+                                    android:padding="8dp"
+                                    android:text="@string/mode_classic_title" >
+                                </TextView>
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="@string/statstable_played" >
+                                </TextView>
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="@string/statstable_win" >
+                                </TextView>
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="@string/statstable_loss" >
+                                </TextView>
+                            </TableRow>
+                        </TableLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp" >
+
+                        <TableLayout
+                            android:id="@+id/statsTableOriginal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/stats_table" >
+
+                            <TableRow
+                                android:id="@+id/statsHeaderRowOriginal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center_vertical|left"
+                                    android:padding="8dp"
+                                    android:text="@string/mode_original_title" >
+                                </TextView>
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="@string/statstable_played" >
+                                </TextView>
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="@string/statstable_win" >
+                                </TextView>
+
+                                <TextView
+                                    style="@style/StatsTextStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/stats_cell"
+                                    android:gravity="center"
+                                    android:padding="8dp"
+                                    android:text="@string/statstable_loss" >
+                                </TextView>
+                            </TableRow>
+                        </TableLayout>
+                    </RelativeLayout>
+                </ViewFlipper>
+            </ScrollView>
+        </LinearLayout>
+    </android.gesture.GestureOverlayView>
+
+</RelativeLayout>

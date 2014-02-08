@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Le dernier baton</string>
+   	<string name="new_game">Jouer !</string>
+   	<string name="onePlayerGame">Jouer contre Stickor le robot</string>
+   	<string name="twoPlayerGame">Jouer contre un autre joueur</string>
+    <string name="rules">Les règles</string>
+    <string name="options">Options</string>
+    <string name="quit_app">Quitter</string>
+    <string name="achievements">Succès</string>
+    <string name="achievements_unlock">Succès débloqué !</string>
+    <string name="name_player1">Bleu</string>
+    <string name="name_player2">Rouge</string>
+    <string name="name_ai">Stickor</string>
+    <string name="mode_classic_title">Mode classique</string>
+    <string name="mode_classic_description">Chaque joueur doit retirer 1, 2 ou 3 batons par tour. Attention à ne pas prendre le dernier baton !</string>
+    <string name="mode_original_title">Mode original</string>
+    <string name="mode_original_description">Chaque joueur doit retirer 1 à 6 batons par tour mais les conditions changent à chaque partie !</string>
+    <string name="intelligence">Sélectionner la difficulté de Stickor le robot</string>
+    <string name="intelligence_short">Difficulté</string>
+    <string name="remaining_sticks_short" formatted="false">%s baton%s</string>
+    <string name="instruction_player_turn">Combien de batons voulez-vous retirer ?</string>
+    <string name="instruction_ai_turn">C\'est au tour de Stickor, que va-t-il faire ?</string>
+    <string name="restart">Relancer une partie</string>
+    <string name="menu">Menu</string>
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="reset_stats">Effacer</string>
+    <string name="reset_stats_sure">Remise à zéro des statistiques ?</string>
+    <string name="rule1">Vous jouez, sur un plateau de 20 batons, chacun votre tour, soit contre un autre joueur, soit contre Stickor le robot.</string>
+    <string name="rule2">Chacun votre tour, chaque joueur doit retirer un, deux ou trois batons du plateau. En mode original, chaque joueur peut retirer de 1 à 6 batons selon la partie.</string>
+    <string name="rule3">Si vous forcez l\'autre joueur à prendre le dernier baton, vous gagnez !</string>
+    
+    <string name="win_phrase" formatted="false">%s gagne !</string>
+    <string name="win_phrase_you">C\'est gagné !</string>
+    
+    <string name="last_move_toast_you">Ceci est votre dernier coup</string>
+    <string name="last_move_toast" formatted="false">C\'est le dernier coup de %s</string>
+    
+    <string name="statstable_games">Parties</string>
+    <string name="statstable_played">Jouées</string>
+    <string name="statstable_win">Victoires</string>
+    <string name="statstable_loss">Défaites</string>
+    <string name="statstable_total">Total</string>
+    
+    <string-array name="player_victory">
+        <item>Félicitations ! Vous avez gagné !</item>
+        <item>Youpi ! C\'est gagné !</item>
+        <item>Super ! C\'est une victoire !</item>
+    </string-array>
+    
+    <string-array name="player_loss">
+        <item>Bouh ! Vous avez perdu !</item>
+        <item>Aaarg ! Vous avez dû prendre le dernier baton !</item>
+        <item>:-( Essaie encore !</item>
+    </string-array>
+    
+	<string-array name="intelligenceItems">
+        <item>Facile</item>
+        <item>Normale</item>
+        <item>Difficile</item>
+    </string-array>
+
+</resources>

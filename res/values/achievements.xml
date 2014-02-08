@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="achievement_W1EC">The classic start!|Win your first game (classic)</string>
+    <string name="achievement_W1NC">Good debuts!|Win a game on normal (classic)</string>
+    <string name="achievement_W1HC">The first one!|Win a game on hard (classic)</string>
+    <string name="achievement_W1EO">The original start!|Win a first game! (original)</string>
+    <string name="achievement_W1NO">Nice debuts!|Win a game on normal (original)</string>
+    <string name="achievement_W1HO">Original victory!|Win a game on hard (original)</string>
+    <string name="achievement_W10EC">Yeah!|Win 10 games on easy (classic)</string>
+    <string name="achievement_W10NC">Good Kharma!|Win 10 games on normal (classic)</string>
+    <string name="achievement_W10HC">Keep it up!|Win 10 games on hard (classic)</string>
+    <string name="achievement_W10EO">Woo!|Win 10 games on easy (original)</string>
+    <string name="achievement_W10NO">Check it out!|Win 10 games on normal (original)</string>
+    <string name="achievement_W10HO">Awesome!|Win 10 games on hard (original)</string>
+	<string name="achievement_W25EC">Yeah Yeah Yeah!|Win 25 games on easy (classic)</string>
+    <string name="achievement_W25NC">Pretty good!|Win 25 games on normal (classic)</string>
+    <string name="achievement_W25HC">Master!|Win 25 games on hard (classic)</string>
+    <string name="achievement_W25EO">Woo woo woo!|Win 25 games on easy (original)</string>
+    <string name="achievement_W25NO">Like a boss!|Win 25 games on normal (original)</string>
+    <string name="achievement_W25HO">Lord of the Sticks!|Win 25 games on hard (original)</string>
+    <string name="achievement_P25">Freshman|Play 25 games</string>
+    <string name="achievement_P50">Junior|Play 50 games</string>
+    <string name="achievement_P100">Senior|Play 100 games</string>
+    <string name="achievement_R5HC">Classic Master|Win 5 games on hard in a row (classic)</string>
+    <string name="achievement_R3HO">Original Master|Win 3 games on hard in a row (original)</string>
+    <string name="achievement_D3">Welcome back!|Play on 3 different days</string>
+	<string name="achievement_D7">Addict!|Play on 7 different days</string>
+	<string name="achievement__LOSS">Self-Destruction!|Remove 2+ sticks in the very last move</string>
+    
+    <!--
+    <string name="chievo_play_fifty_game">Aaaaand Fifty!|Win a first game!</string>
+    <string name="chievo_win_one_easy_game">That\'s a start!|Win a first game!</string>
+    <string name="chievo_win_one_normal_game">Good debuts!|Win a game on hard</string>
+    <string name="chievo_win_one_hard_game">The first one!|Win a game on hard</string>
+    <string name="chievo_win_ten_hard_games">Yeah!|You Win 10 games on hard</string>
+    <string name="chievo_win_five_hard_games_strike">I guess it isn\'t about luck anymore!|Win 5 games in a row on hard!</string>
+    <string name="chievo_win_five_normal_games_strike">5 in a row!|Win 5 games in a row on normal!</string>
+    <string name="chievo_win_five_easy_games_strike">Good Kharma|Win 5 games in a row on easy!</string>
+    <string name="chievo_win_five_days_strike">Five days of victory|Win at least one game a day during 5 days!</string>
+    <string name="chievo_win_timed_game">Fast enough|Win a game within 5 seconds!</string>
+    <string name="chievo_win_timed_hard_game">Fast forward|Win a game within 5 seconds on hard!</string>
+    <string name="chievo_kamikaze_game">Self-destruction|Remove more than one stick on the last move</string>
+    -->
+
+</resources>

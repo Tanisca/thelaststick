@@ -1,0 +1,713 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/leftlayout"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/board_left_margin"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/lastMove1sym"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dip"
+            android:visibility="invisible" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+        </LinearLayout>
+
+        <com.tanisca.thelaststick.tool.VerticalTextView
+            android:id="@+id/stickCounter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lastMove1Draw"
+            android:layout_below="@+id/lastMove1sym"
+            android:gravity="bottom|center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/lastMove1Num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+			android:background="@drawable/remove_player1_button"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/lastMove1Draw"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip" >
+
+            <View
+                android:id="@+id/lastMove1a"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/lastMove1b"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/lastMove1c"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/stick"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middlelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/rightlayout"
+        android:layout_toRightOf="@+id/leftlayout"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/adPlaceHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/instruction_player_turn"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/deckPlayer2Draw"
+            style="@style/DeckStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adPlaceHolder"
+            android:layout_marginBottom="10dip"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <RelativeLayout
+                android:id="@+id/pick3Player2ButtonDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/remove_disabled_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="5dip" >
+
+                <View
+                    android:id="@+id/stickD"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/stick_disabled" />
+
+                <View
+                    android:id="@+id/stickE"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/stickD"
+                    android:background="@drawable/stick_disabled" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/stickE"
+                    android:background="@drawable/stick_disabled" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pick2Player2ButtonDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/remove_disabled_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="19dip"
+                android:paddingTop="5dip" >
+
+                <View
+                    android:id="@+id/stickF"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/stick_disabled" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/stickF"
+                    android:background="@drawable/stick_disabled" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pick1Player2ButtonDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player2_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingTop="5dip" >
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/stick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deckPlayer2Num"
+            style="@style/DeckStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adPlaceHolder"
+            android:layout_marginBottom="10dip"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <com.tanisca.thelaststick.tool.RotatedButton
+                android:id="@+id/pick3Player2ButtonNum"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player2_button"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <com.tanisca.thelaststick.tool.RotatedButton
+                android:id="@+id/pick2Player2ButtonNum"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player2_button"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <com.tanisca.thelaststick.tool.RotatedButton
+                android:id="@+id/pick1Player2ButtonNum"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player2_button"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scoreBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/ScoreTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_weight="3"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/restartButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/custom_button"
+                android:text="@string/restart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/scoreBoard"
+            android:layout_below="@+id/scoreBoard"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/menu"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/drawStickBoard"
+            style="@style/StickHeight"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/deckPlayer2Draw"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/text_frame"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/instructionText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drawStickBoard"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="@string/instruction_player_turn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/deckPlayer1Draw"
+            style="@style/DeckStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructionText"
+            android:layout_marginTop="10dip"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <RelativeLayout
+                android:id="@+id/pick1Player1ButtonDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player1_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingTop="5dip" >
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/stick" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pick2Player1ButtonDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player1_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="18dip"
+                android:paddingRight="19dip"
+                android:paddingTop="5dip" >
+
+                <View
+                    android:id="@+id/stickA"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/stick" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/stickA"
+                    android:background="@drawable/stick" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pick3Player1ButtonDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player1_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="5dip" >
+
+                <View
+                    android:id="@+id/stickB"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/stick" />
+
+                <View
+                    android:id="@+id/stickC"
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/stickB"
+                    android:background="@drawable/stick" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/stickC"
+                    android:background="@drawable/stick" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deckPlayer1Num"
+            style="@style/DeckStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructionText"
+            android:layout_marginTop="10dip"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <Button
+                android:id="@+id/pick1Player1ButtonNum"
+                android:layout_width="0dp"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player1_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/pick2Player1ButtonNum"
+                android:layout_width="0dp"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player1_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/pick3Player1ButtonNum"
+                android:layout_width="0dp"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/remove_player1_button"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="5dip"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightlayout"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/board_right_margin"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/lastMove2Draw"
+            android:layout_width="50dip"
+            android:layout_height="20dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dip" >
+
+            <View
+                android:id="@+id/lastMove2c"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/lastMove2b"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/lastMove2a"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/stick"
+                android:visibility="invisible" />
+        </LinearLayout>
+        
+        <com.tanisca.thelaststick.tool.RotatedButton
+            android:id="@+id/lastMove2Num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+			android:background="@drawable/remove_player2_button"
+            android:visibility="invisible" />
+
+        <com.tanisca.thelaststick.tool.VerticalTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lastMove2sym"
+            android:layout_below="@+id/lastMove2Draw"
+            android:gravity="top|center"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/lastMove2sym"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dip"
+            android:visibility="invisible" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/stick" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ads_board_banner"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, E94B8BE128FA526DD52F79B4963BF468"
+        android:gravity="center" />
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/mainmenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        style="@style/BoardStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/top_header"
+            layout="@layout/inc_header" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_header" >
+
+            <TableLayout
+                android:id="@+id/layout_mode_selection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_frame" >
+
+                        <TextView
+                            android:id="@+id/mode_classic_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1.5"
+                            android:text="@string/mode_classic_title"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/mode_classic_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mode_classic_title"
+                            android:text="@string/mode_classic_description"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/mode_description" />
+
+                        <Button
+                            android:id="@+id/mode_classic_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mode_classic_description"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dip"
+                            android:background="@drawable/custom_button"
+                            android:text="@string/new_game"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_frame" >
+
+                        <TextView
+                            android:id="@+id/mode_original_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1.5"
+                            android:text="@string/mode_original_title"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/mode_original_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mode_original_title"
+                            android:text="@string/mode_original_description"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/mode_description" />
+
+                        <Button
+                            android:id="@+id/mode_original_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mode_original_description"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dip"
+                            android:background="@drawable/custom_button"
+                            android:text="@string/new_game"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/layout_mode_selection"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/optionButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/options"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/statsButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/stats"
+                    android:textColor="@color/black" />
+                
+                <Button
+                    android:id="@+id/chievosButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/achievements"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/rulesButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/rules"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

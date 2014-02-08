@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tanisca.thelaststick"
+    android:installLocation="preferExternal"
+    android:versionCode="8"
+    android:versionName="2.6" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tanisca.thelaststick.activity.MenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tanisca.thelaststick.activity.MenuPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.tanisca.thelaststick.activity.MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanisca.thelaststick.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.tanisca.thelaststick.activity.BoardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.tanisca.thelaststick.activity.MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanisca.thelaststick.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.tanisca.thelaststick.activity.OptionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.tanisca.thelaststick.activity.MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanisca.thelaststick.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.tanisca.thelaststick.activity.StatsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.tanisca.thelaststick.activity.MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanisca.thelaststick.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.tanisca.thelaststick.activity.AchievementsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.tanisca.thelaststick.activity.MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanisca.thelaststick.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.tanisca.thelaststick.activity.RulesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.tanisca.thelaststick.activity.MenuActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tanisca.thelaststick.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>

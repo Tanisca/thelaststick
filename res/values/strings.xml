@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Last Stick</string>
+    <string name="new_game">Play!</string>
+    <string name="onePlayerGame">Play against Stickor the robot</string>
+    <string name="twoPlayerGame">Play against another player</string>
+    <string name="rules">Game Rules</string>
+    <string name="options">Options</string>
+    <string name="stats">Stats</string>
+    <string name="achievements">Achievements</string>
+    <string name="achievements_unlock">Unlocked Achievements!</string>
+    <string name="quit_app">Quit</string>
+    <string name="name_player1">Blue</string>    
+    <string name="name_player2">Red</string>
+    <string name="name_ai">Stickor</string>
+    <string name="mode_classic_title">Classic Mode</string>
+    <string name="mode_classic_description">Each player has to remove 1, 2 or 3 sticks. Be careful not to take the last stick!</string>
+    <string name="mode_original_title">Original Mode</string>
+    <string name="mode_original_description">Each player has to remove 1 to 6 sticks but the possibilities differ for each game you play!</string>
+    <string name="intelligence">Select Stickor\'s difficulty</string>
+    <string name="intelligence_short">Stickor\'s difficulty</string>
+    <string name="remaining_sticks_short" formatted="false">%s stick%s</string>
+    <string name="instruction_player_turn">How many sticks do you want to remove?</string>
+    <string name="instruction_ai_turn">Stickor\'s turn, what will he do?</string>
+    <string name="restart">Restart</string>
+    <string name="menu">Menu</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset_stats">Reset</string>
+    <string name="reset_stats_sure">Clear all stats ?</string>
+    <string name="rule1">You play, on a 20 stick board, either against another player or against Stickor the robot.</string>
+    <string name="rule2">Each player has to remove one, two or three sticks each time they play. On Original Mode, each player has to remove 1 to 6 sticks according to each game.</string>
+    <string name="rule3">You have to left the last stick alone to win the game!</string>
+    <string name="statstable_games">Games</string>
+    <string name="statstable_played">Played</string>
+    <string name="statstable_win">Win</string>
+    <string name="statstable_loss">Loss</string>
+    <string name="statstable_total">Total</string>
+    <string name="win_phrase" formatted="false">%s wins!</string>
+    <string name="win_phrase_you">You win!</string>
+    
+    <string name="last_move_toast_you">This is your last move</string>
+    <string name="last_move_toast" formatted="false">This is %s\'s last move</string>
+
+    <string-array name="player_victory">
+        <item>Congratulations! You win!</item>
+        <item>Hurray! You win!</item>
+        <item>Yeah! Victory!</item>
+    </string-array>
+    <string-array name="player_loss">
+        <item>Boo! You lose!</item>
+        <item>Aaarg! You took the last stick!</item>
+        <item>:-( Try Again!</item>
+    </string-array>
+    <string-array name="intelligenceItems">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+    </string-array>
+
+</resources>
